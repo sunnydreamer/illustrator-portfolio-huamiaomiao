@@ -1,38 +1,68 @@
-.App {
+* {
   text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  cursor: default;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("./images/illustration/bg3.png");
+  background-size: cover;
+  background-repeat: repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profileImg {
+  width: 100px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.name {
+  font-size: 50px;
+  color: black;
+  cursor: default;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
+  color: rgb(163, 163, 163);
+  margin-top: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.navItem {
+  margin: 0 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navItem:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.cardImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.cardImg:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.grid-container {
+  width: 60%;
+  margin: 60px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 80px;
+}
+
+.grid-item {
+  width: 100%;
+  cursor: pointer;
 }

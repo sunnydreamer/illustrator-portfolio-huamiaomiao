@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Helmet } from "react-helmet";
+import Header from "./components/Header";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Hua Miao Miao Illustration</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+          <meta name="description" content="Huamiaomiao Portfolio" />
+        </Helmet>
+      </div>
+      <Header />
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" />
+          <Route path="/contact" />
+        </Routes>
+      </div>
+    </>
   );
 }
 
