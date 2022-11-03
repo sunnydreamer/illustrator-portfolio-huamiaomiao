@@ -3,18 +3,8 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <div className="socialMedia">
-        <div className="socialMediaItem">
-          <img src={instagramImg} alt="" className="icon" />
-        </div>
-        <div className="socialMediaItem">
-          <img src={behanceImg} alt="" className="icon" />
-        </div>
-        <div className="socialMediaItem">
-          <img src={zcoolImg} alt="" className="icon" />
-        </div>
-        <div className="socialMediaItem">Share</div>
-      </div>
+      <hr />
+      <p className="copyright">Hua Miao Miao © 2022 - All Rights Reserved</p>
     </div>
   );
 }

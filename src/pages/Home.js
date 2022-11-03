@@ -17,20 +17,20 @@ import birthday from "../images/illustration/birthday.jpg";
 
 function Home() {
   const imgList = [
-    christmas,
     car,
-    park,
-    park2,
-    birthday,
-    oldCouple,
     reading,
     rabbit,
     halloween2,
+    birthday,
+    oldCouple,
+    park,
+    park2,
+    christmas,
   ];
 
   return (
     <div>
-      <div class="grid-container">
+      <div className="grid-container">
         {imgList.map((product, i) => (
           <div key={i}>
             <Card img={product} />

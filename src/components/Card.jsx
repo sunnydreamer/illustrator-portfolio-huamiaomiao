@@ -4,7 +4,9 @@ import park from "../images/illustration/park.jpg";
 function Card({ img }) {
   return (
     <div>
-      <img src={img} alt="" className="cardImg" />
+      <a href={img}>
+        <img src={img} alt="" className="cardImg" />
+      </a>
     </div>
   );
 }

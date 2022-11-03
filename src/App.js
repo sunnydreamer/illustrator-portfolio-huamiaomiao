@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
